@@ -1,0 +1,23 @@
+.container {
+    padding: 2em;
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction);
+    text-align: var(--text-align);
+}
+
+.entry {
+    margin: 1em;
+    width: 50%;
+    height: 20em;
+    align-content: center;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+}
+
+.container, .entry {
+    align-items: var(--align-items);
+}
+
+

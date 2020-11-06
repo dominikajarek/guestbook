@@ -1,0 +1,72 @@
+:root {
+    --border-radius: 0.2em;
+    --box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.24);
+    --display-flex: flex;
+    --flex-direction: column;
+    --text-align: center;
+    --align-items: center;
+    --border: none;
+    --outline: none;
+}
+
+* {
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+body {
+    background: url("../Fotoram.io (5).jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-container {
+    margin-left: 31em;
+    margin-right: 20em;
+    width: 20em;
+    height: 28em;
+    box-shadow: var(--box-shadow);
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction);
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+#h3 {
+    padding: 0 1em 1em;
+    margin: 0 1em 1em;
+}
+
+input {
+    margin: 1em;
+    display: list-item;
+}
+
+button {
+    width: 4em;
+    height: 2em;
+    margin-top: 1em;
+    float: right;
+}
+
+#div-form {
+    height: 25em;
+}
+
+#form-input {
+    padding: 1em;
+    margin: 1em;
+}
+
+label {
+    float: left;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.main-container, button, input {
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+button, input {
+    outline: var(--outline);
+}

@@ -2,21 +2,36 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+
     <title>Guest Book</title>
+
+    <script src="../script/sendData.js" defer></script>
+
+    <link rel="stylesheet" href="../css/entry.css">
+    <link rel="stylesheet" href="../css/input.css">
 </head>
+
 <body>
-    <div class="input" id="name">
-        <label>Name: </label>
-        <input type="text" th:field="*{username}" placeholder="name" />
+
+    <div class="main-container">
+        <div id="div-form">
+            <form method="POST" action="" id="form-input">
+                <h3 id="h3">GUESTBOOK</h3>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment" name="comment">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit" class="button">send</button>
+            </form>
+        </div>
     </div>
-    <div class="input" id="date">
-        <label>Date: </label>
-        <input type="text" th:field="*{dateField}" placeholder="yyyy-mm-dd" />
-    </div>
-    <div class="input" id="text">
-        <label>Text: </label>
-        <input type="text" th:field="*{text}" placeholder="your entry">
-    </div>
-    <input type="submit" value="Submit"/>
+
+    <div class="container"></div>
 </body>
 </html>
